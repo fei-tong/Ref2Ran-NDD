@@ -18,8 +18,8 @@ To obtain the distribution of the distance from a reference point to a point uni
         %         sim_d1,sim_d2 (optional): the simulated node densities in</br>
         %           area (x1,y1) and the ring area, respectively.</br>
         </br>
-      A more systematic simulation function, which can replace the above function:</br>
-    * --> function   [d_array,r2d_cdf,sim_density] = sim_tiered_polygon_R2rand(R,x_cell,y_cell,varargin)</br>
+   A more systematic simulation function, which can replace the above function:</br>
+   * --> function   [d_array,r2d_cdf,sim_density] = sim_tiered_polygon_R2rand(R,x_cell,y_cell,varargin)</br>
         % Input:</br>
         %   R: reference point R(x_axis,y_axis)</br>
         %</br>
@@ -45,9 +45,9 @@ To obtain the distribution of the distance from a reference point to a point uni
         %   CDF of the distance between R and a random point within the whole area</br>
       </br>
 </br>
-     approach to CDF of the distance from an arbitrary reference point (with or without height) to a random point with an arbitrary polygon, using the approach based on the shoelace formula</br>
-        Two functions:
-        * --> function [ r_array, cdf_array ] = cdf_Polygon_R2rand( R,x,y, h)</br>
+   approach to CDF of the distance from an arbitrary reference point (with or without height) to a random point with an arbitrary polygon, using the approach based on the shoelace formula</br>
+   Two functions:
+   * --> function [ r_array, cdf_array ] = cdf_Polygon_R2rand( R,x,y, h)</br>
         % This fuction is developed based on our uvicspace report:</br>
         %   https://dspace.library.uvic.ca//handle/1828/5134</br>
         % and a paper which proposes the exteded shoelace formula (also based on our above report):</br>
@@ -59,8 +59,8 @@ To obtain the distribution of the distance from a reference point to a point uni
             % x: an array containing the x axises of all the vertexes of the polygon</br>
             % y: an array containing the y axises of all the vertexes of the polygon</br>
             % h(optional): the height of the reference point R</br>
-       A more systematic simulation function, which can replace the above function:</br>
-      * -->function [ r_array, cdf_array ] = cdf_tiered_polygon_R2rand( R,x_cell,y_cell,varargin )
+   A more systematic simulation function, which can replace the above function:</br>
+   * -->function [ r_array, cdf_array ] = cdf_tiered_polygon_R2rand( R,x_cell,y_cell,varargin )
         % Input:</br>
         %   R: reference point R(x_axis,y_axis)</br>
         %</br>
@@ -86,15 +86,15 @@ To obtain the distribution of the distance from a reference point to a point uni
         %   CDF of the distance between R and a random point within the whole area</br>
 </br>
 </br>       
-       It calls the following basic fuction developed in our uvicspace report:</br>
-       * --> function [ area ] = TriangleVertexIntersectionArea(RB,RC,BC,r)</br>
+   It calls the following basic fuction developed in our uvicspace report:</br>
+   * --> function [ area ] = TriangleVertexIntersectionArea(RB,RC,BC,r)</br>
         % R is the reference point, r is the radius of the circle (c) centered at R.</br>
         % This function is to get the area of the intersection between the circle c</br>
         % and the triangle RBC.</br>
         % RB, RC, BC: length of the edge RB, RC, and BC, respectively.</br>
         </br>
-       Another function to be called when the reference point has a nonzero height:</br>
-       * --> function out=getPCDF(aVar, x_axis, pdf, cdf, aOpt)</br>
+   Another function to be called when the reference point has a nonzero height:</br>
+   * --> function out=getPCDF(aVar, x_axis, pdf, cdf, aOpt)</br>
         % Given the pdf function: (pdf,x_axis) or cdf function (cdf,x_axis), this</br>
         %   function is to look up the above two functions with aVar as the x_axis</br>
         %   to find the corresponding pdf (aOpt = 0) or cdf (aOpt = 1)</br>
@@ -124,7 +124,7 @@ To obtain the distribution of the distance from a reference point to a point uni
         %         three vertices: A,B,C</br>
         </br>
 ## 3. main test script file
-    The following main m files can be run directly. They all use the same functions listed above.</br>
+   The following main m files can be run directly. They all use the same functions listed above.</br>
    * --> main_polygon_R2rand.m</br>
         For arbitrary polygon</br>
    * --> main_trangle_vertex2rand.m
@@ -133,5 +133,3 @@ To obtain the distribution of the distance from a reference point to a point uni
         For tiered polygon, by using the probabilistic sum method</br>
    * --> main_tiered_polygon_R2rand_systematic.m
         For tiered polygons, calling the systematic function: cdf_tiered_polygon_R2rand & sim_tiered_polygon_R2rand</br>
-    </br>
-    </br>    
