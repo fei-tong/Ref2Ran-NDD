@@ -59,7 +59,7 @@ To obtain the distribution of the distance from a reference point to a point uni
             % x: an array containing the x axises of all the vertexes of the polygon</br>
             % y: an array containing the y axises of all the vertexes of the polygon</br>
             % h(optional): the height of the reference point R</br>
-   A more systematic simulation function, which can replace the above function:</br>
+   A more systematic simulation function, which can replace the above function:
    * -->function [ r_array, cdf_array ] = cdf_tiered_polygon_R2rand( R,x_cell,y_cell,varargin )
         % Input:</br>
         %   R: reference point R(x_axis,y_axis)</br>
@@ -84,16 +84,15 @@ To obtain the distribution of the distance from a reference point to a point uni
         %       [ r_array, cdf_array ] = cdf_tiered_polygon_R2rand( R,x_cell,y_cell,varargin )</br>
         % Output:</br>
         %   CDF of the distance between R and a random point within the whole area</br>
-</br>
 </br>       
-   It calls the following basic fuction developed in our uvicspace report:</br>
+   It calls the following basic fuction developed in our uvicspace report:
    * --> function [ area ] = TriangleVertexIntersectionArea(RB,RC,BC,r)</br>
         % R is the reference point, r is the radius of the circle (c) centered at R.</br>
         % This function is to get the area of the intersection between the circle c</br>
         % and the triangle RBC.</br>
         % RB, RC, BC: length of the edge RB, RC, and BC, respectively.</br>
         </br>
-   Another function to be called when the reference point has a nonzero height:</br>
+   Another function to be called when the reference point has a nonzero height:
    * --> function out=getPCDF(aVar, x_axis, pdf, cdf, aOpt)</br>
         % Given the pdf function: (pdf,x_axis) or cdf function (cdf,x_axis), this</br>
         %   function is to look up the above two functions with aVar as the x_axis</br>
