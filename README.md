@@ -2,8 +2,8 @@
 To obtain the distribution of the distance from a reference point to a point uniformly distributed at random in arbitrarily-shaped finite wireless networks
 
 ## 1. Ref2Rand for arbitrary polygon - From an arbitrary reference point (with or without height) to a random point within the polygon
-    * simulation: 
-      * --> function   [d_array,r2d_cdf,sim_d1,sim_d2] = sim_polygon_R2rand(R,x,y,x1,y1,d1,d2,h)</br>
+   simulation:
+   * --> function   [d_array,r2d_cdf,sim_d1,sim_d2] = sim_polygon_R2rand(R,x,y,x1,y1,d1,d2,h)</br>
         % Input:</br>
         %   R : R(x,y), an arbitrary reference point</br>
         %   x,y : vectors of points, describing points in the plane as</br>
@@ -45,7 +45,7 @@ To obtain the distribution of the distance from a reference point to a point uni
         %   CDF of the distance between R and a random point within the whole area</br>
       </br>
 </br>
-    * approach to CDF of the distance from an arbitrary reference point (with or without height) to a random point with an arbitrary polygon, using the approach based on the shoelace formula
+     approach to CDF of the distance from an arbitrary reference point (with or without height) to a random point with an arbitrary polygon, using the approach based on the shoelace formula</br>
         Two functions:
         * --> function [ r_array, cdf_array ] = cdf_Polygon_R2rand( R,x,y, h)</br>
         % This fuction is developed based on our uvicspace report:</br>
