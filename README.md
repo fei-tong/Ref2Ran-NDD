@@ -105,7 +105,7 @@ To obtain the distribution of the distance from a reference point to a point uni
         %   aOpt: 1: lookup cdf; 0: lookup pdf</br>
         % output:</br>
         %   out: cdf or pdf array</br>
-</br>
+        </br>
 ## 2. other functions used
    * --> function [ polygon_area ] = shoelace( x,y )</br>
         % This function is to get the area of an arbitrary polygon</br>
