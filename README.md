@@ -44,9 +44,8 @@ To obtain the distribution of the distance from a reference point to a point uni
         % Output:</br>
         %   CDF of the distance between R and a random point within the whole area</br>
       </br>
-</br>
    approach to CDF of the distance from an arbitrary reference point (with or without height) to a random point with an arbitrary polygon, using the approach based on the shoelace formula</br>
-   Two functions:
+   Two functions:</br>
    * --> function [ r_array, cdf_array ] = cdf_Polygon_R2rand( R,x,y, h)</br>
         % This fuction is developed based on our uvicspace report:</br>
         %   https://dspace.library.uvic.ca//handle/1828/5134</br>
@@ -59,7 +58,8 @@ To obtain the distribution of the distance from a reference point to a point uni
             % x: an array containing the x axises of all the vertexes of the polygon</br>
             % y: an array containing the y axises of all the vertexes of the polygon</br>
             % h(optional): the height of the reference point R</br>
-   A more systematic simulation function, which can replace the above function:
+            </br>
+   A more systematic simulation function, which can replace the above function:</br>
    * -->function [ r_array, cdf_array ] = cdf_tiered_polygon_R2rand( R,x_cell,y_cell,varargin )
         % Input:</br>
         %   R: reference point R(x_axis,y_axis)</br>
@@ -84,7 +84,7 @@ To obtain the distribution of the distance from a reference point to a point uni
         %       [ r_array, cdf_array ] = cdf_tiered_polygon_R2rand( R,x_cell,y_cell,varargin )</br>
         % Output:</br>
         %   CDF of the distance between R and a random point within the whole area</br>
-</br>       
+        </br>
    It calls the following basic fuction developed in our uvicspace report:
    * --> function [ area ] = TriangleVertexIntersectionArea(RB,RC,BC,r)</br>
         % R is the reference point, r is the radius of the circle (c) centered at R.</br>
