@@ -126,9 +126,9 @@ To obtain the distribution of the distance from a reference point to a point uni
    The following main m files can be run directly. They all use the same functions listed above.</br>
    * --> main_polygon_R2rand.m</br>
         For arbitrary polygon</br>
-   * --> main_trangle_vertex2rand.m
+   * --> main_trangle_vertex2rand.m</br>
         For triangle </br>
-   * --> main_polygon_hole_R2rand.m
+   * --> main_polygon_hole_R2rand.m</br>
         For tiered polygon, by using the probabilistic sum method</br>
-   * --> main_tiered_polygon_R2rand_systematic.m
-        For tiered polygons, calling the systematic function: cdf_tiered_polygon_R2rand & sim_tiered_polygon_R2rand</br>
+   * --> main_tiered_polygon_R2rand_systematic.m</br>
+        For tiered polygons, calling the systematic function: cdf_tiered_polygon_R2rand & sim_tiered_polygon_R2rand
